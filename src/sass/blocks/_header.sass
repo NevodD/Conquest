@@ -1,0 +1,80 @@
+.header
+  background: #FDFDFB
+
+.header-wrapper
+  display: flex
+  justify-content: space-between
+
+.header-logo
+  margin-top: 31px
+  margin-bottom: 28px
+
+.header-menu
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  min-width: 422px
+  @media screen and ( max-width: $tablet-width )
+    position: absolute
+    top: 0
+    left: 100%
+    background: #fff
+    width: 100vw
+    min-width: auto
+    min-height: 100vh
+    transition: 0.2s linear
+    overflow: auto
+    flex-direction: column
+    flex-wrap: nowrap
+    justify-content: start
+    padding-top: 100px
+    margin: 0
+    z-index: 5
+
+.header-menu--active
+  left: 0
+.header-menu__item 
+
+.header-menu__link 
+  color: #555248
+  font-size: 14px
+  @media screen and ( max-width: $tablet-width )
+    width: 100vw 
+    height: 100px
+    padding: 40px 0
+    text-align: center
+
+.header-sidebar
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+  min-width: 99px
+  margin-top: 30px
+  @media screen and ( max-width: $tablet-width )
+    margin-right: 70px
+
+
+.header-sidebar__item 
+
+.header-sidebar__link
+
+.header-sidebar__img 
+
+.header-sidebar__link--favourites
+  position: relative
+  &::before
+    content: "1"
+    position: absolute
+    top: 2px
+    right: -8px
+    width: 13px
+    height: 13px
+    border-radius: 50%
+    text-align: center
+    background: #E6C8B4
+    color: #1B1A17
+    font-size: 8px
+
+

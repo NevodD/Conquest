@@ -1,0 +1,112 @@
+.catalog
+  min-height: 519px
+  background: url(../img/catalog/catalog-bg.svg), linear-gradient(90deg, rgba(247,245,239,1) 38.75%, rgba(253,253,251,1) 38.75%)
+  background-repeat: no-repeat
+  background-position: 100% 0
+    
+
+.catalog-wrapper
+  display: flex
+  @media screen and ( max-width: $container-width )
+    flex-direction: column
+    align-items: center
+
+.catalog-gallery__item
+  width: 50%
+  padding-top: 38px
+  padding-left: 74px
+  @media screen and ( max-width: $container-width )
+    width: 100%
+    padding-left: 0
+
+
+.catalog-gallery
+
+.catalog-gallery-slider
+  width: 521px
+  @media screen and ( max-width: 650px )
+    width: 80vw
+
+
+.catalog-gallery-list
+  display: flex 
+  overflow: hidden
+
+
+.catalog-gallery-list__item
+  // width: 90vw
+  // max-width: 521px
+  // height: auto
+  flex-shrink: 0
+
+.catalog-gallery-list__img
+  @media screen and ( max-width: 650px )
+    width: 80vw
+    height: auto
+
+.catalog-gallery-controls
+  display: flex
+  justify-content: space-between
+  align-items: center
+  width: 64px
+  height: 12px
+  margin-right: 77px
+  margin-left: auto
+  @media screen and ( max-width: $container-width )
+    margin-right: auto
+
+
+
+.catalog-gallery-controls__button
+  padding: 3px
+  width: 7px
+  height: 7px
+  border: none
+  background-color: transparent
+  cursor: pointer
+
+.catalog-gallery-controls__button--prev
+  transform: rotate(-45deg)
+  border-left: 0.5px solid #1B1A17
+  border-top: 0.5px solid #1B1A17
+
+.catalog-gallery-controls__button--next
+  transform: rotate(45deg)
+  border-right: 0.5px solid #1B1A17
+  border-top: 0.5px solid #1B1A17
+
+.catalog-gallery-controls__number
+  font-family: 'Prata'
+  font-size: 12px
+
+.catalog-description
+  @media screen and ( max-width: $container-width )
+
+    padding-bottom: 38px
+
+.catalog-description__title
+  font-family: 'Playfair Display'
+  font-weight: 400
+  font-size: 32px
+  line-height: 43px
+  margin-top: 102px
+  color: #1B1A17
+  @media screen and ( max-width: $container-width )
+    margin-top: 30px
+
+
+.catalog-description__text
+  max-width: 380px
+  margin-bottom: 35px
+  line-height: 150%
+  color: #444240
+
+.catalog-description__link
+  width: 205px
+  min-height: 64px
+  background-color: #D4B098
+  font-weight: 500
+  font-size: 12px
+  color: #ffffff
+  text-transform: uppercase
+  letter-spacing: 0.05em

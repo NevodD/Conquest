@@ -1,0 +1,85 @@
+@import variables
+@import burger
+
+.visually-hidden:not(:focus):not(:active)
+  position: absolute
+  overflow: hidden
+  clip: rect(0 0 0 0)
+  margin: -1px
+  padding: 0
+  width: 1px
+  height: 1px
+  border: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+
+body
+  margin: 0
+  // font-family: 'Playfair Display', serif
+  // font-family: 'Prata', serif
+  font-family: 'Roboto', sans-serif
+  overflow-x: hidden
+
+.container
+  width: 90%
+  max-width: 1171px
+  margin: auto
+
+.link
+  text-decoration: none
+  padding-top: 6px
+  padding-bottom: 6px
+  display: block
+  box-sizing: border-box
+
+.list
+  list-style: none
+  padding-left: 0
+
+.button-link
+  display: flex
+
+.button-link-text
+  margin: auto
+
+
+.price
+  padding-right: 18px
+  position: relative
+  &::after
+    display: block
+    content: url(../img/offer/ruble.svg)
+    position: absolute
+    top: 0
+    right: 0
+    height: 13px
+
+.price--little
+  padding-right: 13px
+  &::after
+    content: url(../img/offer/ruble-small.svg)
+
+.stripe
+  display: inline-block
+  position: absolute
+  top: 50%
+  left: -65px
+  width: 50px
+  height: 1px
+  background-color:#8B8371
+
+
+.stripe--right
+  left: 88px
+
+.stripe--short
+  left: -48px
+  width: 30px
+
+
+@import blocks/header
+@import blocks/offer
+@import blocks/popular
+@import blocks/catalog
+@import blocks/social
+@import blocks/footer

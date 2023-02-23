@@ -1,0 +1,73 @@
+.popular
+  min-height: 640px
+
+.popular__title
+  font-family: 'Playfair Display'
+  font-size: 32px
+  color: #1B1A17
+  text-align: center
+  font-weight: 400
+  margin-top: 76px
+  margin-bottom: 0
+  @media screen and ( max-width: $container-width )
+    margin-bottom: 30px
+
+
+.popular__link
+  width: 104px
+  height: 27px
+  border-bottom: 1px solid #C4C0B6
+  color: #444240
+  font-weight: 500
+  padding-top: 0
+  margin-right: 0
+  margin-left: auto
+  margin-top: -7px
+
+.popular-product
+  display: grid
+  gap: 30px
+  grid-template-columns: repeat(auto-fit, 370px)
+  justify-content: center
+  margin: 25px 0
+  @media screen and ( max-width: $tablet-width )
+    grid-template-columns: repeat(auto-fit, 300px)
+
+
+
+.popular-product-item
+  box-sizing: border-box
+  // min-height: 467px
+  padding: 30px 0px 26px 40px
+  background-color: #FDFDFB
+
+.popular-product-item__title
+  font-family: 'Playfair Display'
+  font-size: 14px
+  font-weight: 700
+  letter-spacing: 0.03em
+  color: rgba(27, 26, 23, 0.82)
+  margin: 10px 0 5px 0
+
+.popular-product-item__price
+  font-family: 'Prata'
+  font-size: 12px
+
+
+.popular-product-item__img
+  box-sizing: border-box
+  margin-left: -15px
+  margin-top: -10px
+  width: 330px
+  height: auto
+  border-radius: 50%
+  box-shadow: inset -1px 0px 0px 0.5px #e9e3d4
+  @media screen and ( max-width: $tablet-width )
+    width: 222px
+
+
+.popular-product-item__link
+  font-family: 'Playfair Display'
+  position: relative
+  margin-left: 50px
+  color: #1B1A17
