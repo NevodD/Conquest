@@ -579,7 +579,7 @@ body {
 }
 @media screen and (max-width: 1171px) {
   .catalog-gallery__item {
-    width: 100%;
+    width: auto;
     padding-left: 0;
   }
 }
